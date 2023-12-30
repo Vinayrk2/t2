@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        input[name=username]:hover{
+            background-color: yellow;
+        }
+        input[name=password]:hover{
+            background-color: pink;
+        }
+        label:active{
+            color:red;
+        }
+        button:hover{
+            color:blue;
+        }
+        input[name=username]:active{
+            background-color:lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        Username : <input type="text" name="username" class="change1"><br>
+        Password : <input type="password" name="password" class="change1"><br>
+        Sports : 
+        <label><input type="checkbox" name="sports" id=""> Cricket </label><br>
+        <label><input type="checkbox" name="sports" id=""> Hockey </label><br>
+        <label><input type="checkbox" name="sports" id=""> Badminton </label><br>
+        <label><input type="checkbox" name="sports" id=""> Tennis </label><br>
+        Gender : <input type="radio" name="username">Male<br>
+                 <input type="radio" name="username"> Female<br>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

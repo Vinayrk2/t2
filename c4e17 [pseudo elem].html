@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p::first-line{
+            color:green;
+            font-style:italic;
+        }
+        h1::selection{
+            background-color: grey;
+        }
+        ol{
+            color:green;
+            font-size:30px;
+            list-style-type: upper-roman;
+        }
+    </style>
+</head>
+<body>
+    <h1> Heading </h1>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa architecto totam perferendis laboriosam sapiente corporis similique consequuntur ducimus eum nulla, suscipit iusto inventore adipisci rerum deserunt porro molestiae explicabo error.</p>
+    <ol >
+        <li> Item-1 </li>
+        <li> Item-2 </li>
+        <li> Item-3 </li>
+        <li> Item-4 </li>
+        <li> Item-5 </li>
+    </ol>
+</body>
+</html>

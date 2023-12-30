@@ -1,0 +1,138 @@
+<html>
+<head>
+
+  <title> Home Page </title>
+<style>
+	*{
+		font-family: cursive, monospace;
+	}
+	section+p {
+		color:red;
+		font-variant : small-caps;
+		word-spacing: 23pt;
+	}
+	section>p{
+		color:blue;
+		text-indent:50px;
+		font-size: 10pt;
+		font-style: italic;
+		letter-spacing: 23pt;
+	}
+
+	a[target=_blank]{
+		color:red; text-decoration:none;
+	}
+
+	ul>b{
+		color:blue;
+		font-size: 20px;
+	}
+	ul>li{
+		color:red; font-size:smaller;
+	}
+	h1{
+		color:blue;
+		border: thin solid black;
+		border-top-style:dotted;
+		border-bottom-style: double;
+		border-bottom-width: 4px;	
+		border-left-style:dashed;
+		border-right-style:dashed;	
+		position:sticky ;
+		top:20px;
+	}
+	h1{
+		/* text-decoration: underline 5px double black; */
+		text-transform : capitalize;
+		text-align: center;
+	}
+	a:link{
+		background-color: red;
+	}
+	a:focus{
+		background-color:black;
+	}
+	a:visited{
+		border:2px solid lime;
+	}
+	a:hover{
+		color:green;
+	}
+	a:active{
+		background-color:green;
+	}
+	a:not(.Link){
+		border:2px solid lime;
+	}
+	#para::first-line{
+		font-size: 30px;
+	}
+	#para::first-letter{
+		color:red;
+	}
+	ul>li::marker{
+		content:"|"
+	}
+	::selection{
+		color:black;
+		background-color: rgba(95, 158, 160, 0.555);
+	}
+	#para::before{
+		content:"None"
+	}
+	#para::after{
+		content:"End Line"
+	}
+	#box{
+		padding:3px 32px;
+		margin:4px; 
+		box-sizing: border-box;
+	}
+	#para{
+		display:inline-block;
+	}
+</style>
+</head>
+<body>
+
+<h1> This is a Heading , textAlign : left|right|center|justify|initial|inherit</h1>
+<section>
+	<p> This is  a paragraph inside section. </p>
+</section>
+<p> This is  a paragraph </p>
+	<ul>
+		<a href="#" target="_blank" class="Link"><li title="Inline"> Inline </li></a>
+		<b> <li> Id </li> </b>
+		<li> Class </li>
+		<li> pseudo class</li>
+		<li> attribute selector </li>
+		<li> Element </li>
+		<li> <a href="#"> pseudo selector </a></li>
+	</ul>
+		
+	<h2> :Pseudo Classes </h2>
+	<ol>
+		<li> link </li>
+		<li> visited </li>
+		<li> hover </li>
+		<li> active </li>
+	</ol>
+
+	<div id="box" style="background-color:aquamarine;">
+	<h2> ::Pseudo Elements </h2>
+	<ol>
+		<li> first-line </li>
+		<li> first-letter </li>
+		<li> before </li>
+		<li> after </li>
+		<li> marker </li>
+		<li> selection </li>
+	</ol>
+	</div>
+	<div>
+		<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis totam odio similique provident! Aut corrupti incidunt veritatis magni temporibus sunt. Ducimus ratione est sunt totam necessitatibus voluptate quisquam quo. </p>
+		Laborum animi itaque quibusdam sunt saepe blanditiis, odio laboriosam! Est expedita accusamus quidem, illum, recusandae optio deleniti harum explicabo quae nostrum aspernatur.</p>
+	
+	</div>
+</body>
+</html>

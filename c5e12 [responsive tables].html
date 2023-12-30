@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tables</title>
+    <style>
+        #table1{height:50vh; width:50%; background-color: blue; float:left;}
+        #table2{height:50vh; width:50%; background-color: green; float:right;}
+        @media (orientation:portrait){
+            #table1{height:50vh; width:50%; background-color: green; float:left;}
+            #table2{height:50vh; width:50%; background-color: blue; float:right;}
+        }
+        /* #container>table{display: inline-block;} */
+    </style>
+</head>
+<body>
+<div id="container">
+    <table border="1" id="table1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table border="1" id="table2">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

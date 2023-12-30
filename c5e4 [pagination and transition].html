@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination and Transition</title>
+    <style>
+        .pagination a{
+            display: inline-block;
+            height:25px;
+            width:25px;
+            text-decoration: none;
+            border:0.5px solid black;
+            padding:5px;
+            text-align: center;
+            color:black;
+            transition:background-color 2s;
+            border-radius:10px;
+        }
+        .active{background-color: aquamarine;}
+        .pagination a:not(.active):hover{
+            background-color: black;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <a href="">&laquo;</a>
+        <a href="">1</a>
+        <a href="" class="active">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">&raquo;</a>
+    </div>
+</body>
+</html>
