@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-Gradient</title>
+    <style>
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: aquamarine;
+        }
+        .container div{
+            height:200px;
+            width:200px;
+            display: inline-block;
+        }
+        #box1{
+            background:linear-gradient(to bottom, red, green)
+        }
+        #box2{
+            background:linear-gradient(to left top, red, green)
+        }
+        #box4{
+            background: linear-gradient(orange 35%,white 30%,green 35%)
+        }
+        #box3{
+            background-image: radial-gradient(red,yellow,green)
+        }
+        #box5{
+            background: conic-gradient(red 0deg,red 120deg, yellow 120deg, yellow 240deg, green 240deg, green 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </div>
+</body>
+</html>
